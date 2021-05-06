@@ -4,8 +4,8 @@ import "./styles.css";
 const Contact = () => {
   return (
     <div className='container-contact'>
-      <div className='positionning-div-contact'></div>
-      <div className='content-contact'>Contact component</div>
+      <div className='positionning-div-contact'>Contact</div>
+      <div className='content-contact'>Contenu Contact</div>
     </div>
   );
 };

@@ -4,8 +4,8 @@ import "./styles.css";
 const JobTitle = () => {
   return (
     <div className='container-jobtitle'>
-      <div className='positionning-div-jobtitle'></div>
-      <div className='content-jobtitle'>JobTitle component</div>
+      <div className='positionning-div-jobtitle'>Job title</div>
+      <div className='content-jobtitle'>Contenu introduction</div>
     </div>
   );
 };
