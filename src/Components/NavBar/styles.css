@@ -10,6 +10,8 @@
   background-color: rgb(142, 235, 142);
   padding: 1rem;
   box-sizing: border-box;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-name {
