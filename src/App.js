@@ -1,7 +1,6 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import "./App.css";
-import NavBar from "./Components/NavBar/index";
 import JobTitle from "./Components/JobTitle/index";
 import Realisations from "./Components/Realisations/index";
 import Contact from "./Components/Contact/index";
