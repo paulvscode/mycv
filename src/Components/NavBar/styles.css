@@ -1,0 +1,29 @@
+.grid-container-navbar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "navbar-name navbar-realisation navbar-cvenligne navbar-contact";
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(142, 235, 142);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.navbar-name {
+  grid-area: navbar-name;
+}
+
+.navbar-realisation {
+  grid-area: navbar-realisation;
+}
+
+.navbar-cvenligne {
+  grid-area: navbar-cvenligne;
+}
+
+.navbar-contact {
+  grid-area: navbar-contact;
+}

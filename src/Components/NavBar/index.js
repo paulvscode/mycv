@@ -3,13 +3,11 @@ import "./styles.css";
 
 const NavBar = () => {
   return (
-    <div className='navbar'>
-      <h4>Paul Barraud de Lagerie</h4>
-      <ul>
-        <li>Réalisations</li>
-        <li>Cv en ligne</li>
-        <li>Contact</li>
-      </ul>
+    <div className='grid-container-navbar'>
+      <div className='navbar-name'>Paul Barraud de Lagerie</div>
+      <div className='navbar-realisation'>Réalisations</div>
+      <div className='navbar-cvenligne'>Cv en ligne</div>
+      <div className='navbar-contact'>Contact</div>
     </div>
   );
 };
