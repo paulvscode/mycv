@@ -10,38 +10,40 @@ import Footer from "./Components/Footer/index";
 function App() {
   return (
     <div className='App'>
-      <div className='grid-container-navbar'>
-        <div className='navbar-name'>Paul Barraud de Lagerie</div>
-        <Link
-          activeClass='active'
-          to='realisations'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <div className='navbar-realisation'>Réalisations</div>
-        </Link>
-        <Link
-          activeClass='active'
-          to='cv'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <div className='navbar-cvenligne'>Cv en ligne</div>
-        </Link>
-        <Link
-          activeClass='active'
-          to='contact'
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <div className='navbar-contact'>Contact</div>
-        </Link>
+      <div className='container-grid-container'>
+        <div className='grid-container-navbar'>
+          <div className='navbar-name'>Paul Barraud de Lagerie</div>
+          <Link
+            activeClass='active'
+            to='realisations'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <div className='navbar-realisation'>Réalisations</div>
+          </Link>
+          <Link
+            activeClass='active'
+            to='cv'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <div className='navbar-cvenligne'>Cv en ligne</div>
+          </Link>
+          <Link
+            activeClass='active'
+            to='contact'
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <div className='navbar-contact'>Contact</div>
+          </Link>
+        </div>
       </div>
 
       <div className='container-content'>

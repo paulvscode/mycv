@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.App {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /* navbar  */
 
 .grid-container-navbar {
@@ -10,14 +15,18 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "navbar-name navbar-realisation navbar-cvenligne navbar-contact";
-  height: 10vh;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
-  padding: 1rem;
+  background-color: white;
   box-sizing: border-box;
+  align-content: center;
+  padding: 1rem;
+  border: 1px solid black;
+
+  overflow: hidden;
   position: fixed;
-  width: 100%;
+  top: 0;
+  width: 80%;
 }
 
 .navbar-name {
@@ -29,27 +38,28 @@
 .navbar-contact {
   grid-area: navbar-realisation;
   border-radius: 5px;
-  background-color: green;
+  background-color: white;
+  border: 1px solid black;
   width: 50%;
   text-align: center;
   padding: 1rem;
-  color: white;
+  color: black;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
 .navbar-realisation:hover {
-  background-color: white;
-  color: green;
+  background-color: green;
+  color: white;
 }
 .navbar-cvenligne:hover {
-  background-color: white;
-  color: green;
+  background-color: green;
+  color: white;
 }
 .navbar-contact:hover {
-  background-color: white;
-  color: green;
+  background-color: green;
+  color: white;
 }
 
 @media (max-width: 375px) {
