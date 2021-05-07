@@ -1,9 +1,17 @@
 .container-jobtitle {
   height: 100vh;
   background-color: rgb(255, 255, 187);
-  border: 1px solid black;
+  margin-top: 10vh;
 }
 
 .positionning-div-jobtitle {
   height: 10vh;
+}
+
+@media (max-width: 375px) {
+  .container-jobtitle {
+    height: 100vh;
+    background-color: rgb(255, 255, 187);
+    margin-top: 0vh;
+  }
 }

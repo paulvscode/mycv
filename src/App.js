@@ -10,8 +10,8 @@ import Footer from "./Components/Footer/index";
 function App() {
   return (
     <div className='App'>
-      <div className='container-grid-container'>
-        <div className='grid-container-navbar'>
+      <div className='container-grid-contain'>
+        <nav className='grid-container-navbar'>
           <div className='navbar-name'>Paul Barraud de Lagerie</div>
           <Link
             activeClass='active'
@@ -43,7 +43,7 @@ function App() {
           >
             <div className='navbar-contact'>Contact</div>
           </Link>
-        </div>
+        </nav>
       </div>
 
       <div className='container-content'>
