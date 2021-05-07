@@ -4,7 +4,7 @@ import "./styles.css";
 const JobTitle = () => {
   return (
     <div className='container-jobtitle'>
-      <div className='content-jobtitle'>Contenu introduction</div>
+      <div className='content-jobtitle'>Développeur FullStack Javascript</div>
     </div>
   );
 };

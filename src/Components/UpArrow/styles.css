@@ -1,0 +1,20 @@
+/* arrow up */
+
+.up-arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 2rem;
+  background-color: #490b3d;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  z-index: 9999;
+}
+
+.up-arrow:hover {
+  background-color: white;
+  border: 1px solid #490b3d;
+  color: #490b3d;
+  cursor: pointer;
+}

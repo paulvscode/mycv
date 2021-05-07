@@ -1,7 +1,10 @@
 .container-jobtitle {
-  height: 100vh;
+  height: 90vh;
   border-top: 5px solid #490b3d;
   margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 375px) {

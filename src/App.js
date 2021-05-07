@@ -7,6 +7,7 @@ import Realisations from "./Components/Realisations/index";
 import Contact from "./Components/Contact/index";
 import CvEnLigne from "./Components/CvEnLigne/index";
 import Footer from "./Components/Footer/index";
+import UpArrow from "./Components/UpArrow/index";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -29,19 +30,21 @@ function App() {
 
   let changeBg = "grid-container-navbar ";
   let changeColorNav = "";
+  let changeColorNavName = "";
 
   if (scrollY >= 1) {
     changeBg += "greying-out";
     changeColorNav = "color-navbar-on-scroll";
+    changeColorNavName = "color-navbar-name-on-scroll";
   }
-  console.log(changeBg);
 
   return (
     <div className='container-background'>
       <div className='App'>
+        {scrollY >= 1 && <UpArrow />}
         <div className='container-grid-contain'>
           <nav className={changeBg}>
-            <div className={"navbar-name " + changeColorNav}>
+            <div className={"navbar-name " + changeColorNavName}>
               Paul Barraud de Lagerie
             </div>
             <Link
@@ -80,7 +83,6 @@ function App() {
             </Link>
           </nav>
         </div>
-
         <div className='container-content'>
           <JobTitle />
           <div id='realisations'>

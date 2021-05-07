@@ -132,8 +132,13 @@
 .color-navbar-on-scroll {
   color: white;
 }
+
 .color-navbar-on-scroll:hover {
   color: #490b3d;
   text-decoration: underline;
   background-color: white;
+}
+
+.color-navbar-name-on-scroll {
+  color: white;
 }
