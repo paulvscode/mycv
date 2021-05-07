@@ -7,10 +7,24 @@
   align-items: center;
 }
 
+.content-jobtitle {
+  width: 60%;
+  background-color: white;
+  padding: 5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
 @media (max-width: 375px) {
   .container-jobtitle {
     height: 100vh;
     background-color: #490b3d;
     margin-top: 0vh;
   }
+}
+
+.oclock {
+  color: #0ac3a7;
+  text-decoration: none;
 }
