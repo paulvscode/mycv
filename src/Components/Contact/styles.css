@@ -1,6 +1,6 @@
 .container-contact {
   height: 100vh;
-  background-color: rgb(187, 245, 255);
+  border-top: 5px solid #490b3d;
 }
 
 .positionning-div-contact {

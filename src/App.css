@@ -124,6 +124,15 @@
 }
 
 .greying-out {
-  background-color: rgb(230, 230, 230);
+  background-color: #490b3d;
   transition: 1s;
+}
+
+.color-navbar-on-scroll {
+  color: white;
+}
+.color-navbar-on-scroll:hover {
+  color: #490b3d;
+  text-decoration: underline;
+  background-color: white;
 }

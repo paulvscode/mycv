@@ -28,9 +28,11 @@ function App() {
   console.log(scrollY);
 
   let changeBg = "grid-container-navbar ";
+  let changeColorNav = "";
 
   if (scrollY >= 1) {
     changeBg += "greying-out";
+    changeColorNav = "color-navbar-on-scroll";
   }
   console.log(changeBg);
 
@@ -39,7 +41,9 @@ function App() {
       <div className='App'>
         <div className='container-grid-contain'>
           <nav className={changeBg}>
-            <div className='navbar-name'>Paul Barraud de Lagerie</div>
+            <div className={"navbar-name " + changeColorNav}>
+              Paul Barraud de Lagerie
+            </div>
             <Link
               activeClass='active'
               to='realisations'
@@ -48,7 +52,9 @@ function App() {
               offset={0}
               duration={500}
             >
-              <div className='navbar-realisation'>Réalisations</div>
+              <div className={"navbar-realisation " + changeColorNav}>
+                Réalisations
+              </div>
             </Link>
             <Link
               activeClass='active'
@@ -58,7 +64,9 @@ function App() {
               offset={0}
               duration={500}
             >
-              <div className='navbar-cvenligne'>Cv en ligne</div>
+              <div className={"navbar-cvenligne " + changeColorNav}>
+                Cv en ligne
+              </div>
             </Link>
             <Link
               activeClass='active'
@@ -68,7 +76,7 @@ function App() {
               offset={0}
               duration={500}
             >
-              <div className='navbar-contact'>Contact</div>
+              <div className={"navbar-contact " + changeColorNav}>Contact</div>
             </Link>
           </nav>
         </div>

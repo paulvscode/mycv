@@ -1,13 +1,13 @@
 .container-jobtitle {
   height: 100vh;
-  background-color: #ffca3a;
+  border-top: 5px solid #490b3d;
   margin-top: 10vh;
 }
 
 @media (max-width: 375px) {
   .container-jobtitle {
     height: 100vh;
-    background-color: #ffca3a;
+    background-color: #490b3d;
     margin-top: 0vh;
   }
 }
