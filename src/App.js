@@ -43,7 +43,7 @@ function App() {
       <div className='App'>
         {scrollY >= 1 && <UpArrow />}
         <div className='container-grid-contain'>
-          <nav className={changeBg}>
+          <nav id='navbar-fixed-div' className={changeBg}>
             <div className={"navbar-name " + changeColorNavName}>
               Paul Barraud de Lagerie
             </div>

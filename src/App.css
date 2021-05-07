@@ -142,3 +142,8 @@
 .color-navbar-name-on-scroll {
   color: white;
 }
+
+#navbar-fixed-div {
+  width: 90%;
+  margin: 0 10%;
+}
