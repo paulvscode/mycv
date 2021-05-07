@@ -126,6 +126,7 @@
 .greying-out {
   background-color: #490b3d;
   transition: 1s;
+  border-bottom: 5px solid #490b3d;
 }
 
 .color-navbar-on-scroll {
