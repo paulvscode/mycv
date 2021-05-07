@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.container-background {
+  background-color: rgb(240, 240, 240);
+  overflow: auto;
+}
+
 .App {
   width: 80%;
   margin: 0 auto;
@@ -17,48 +22,54 @@
   grid-template-areas: "navbar-name navbar-realisation navbar-cvenligne navbar-contact";
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(64, 130, 160);
   box-sizing: border-box;
   align-content: center;
   padding: 1rem;
   overflow: hidden;
-  position: fixed;
   top: 0;
   width: 80%;
+  position: fixed;
   height: 10vh;
 }
 
 .navbar-name {
   grid-area: navbar-name;
+  color: #490b3d;
+  font-size: 1.3rem;
+  margin-left: 3rem;
 }
 
 .navbar-realisation,
 .navbar-cvenligne,
 .navbar-contact {
   grid-area: navbar-realisation;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: white;
-  border: 1px solid black;
   width: 50%;
   text-align: center;
   padding: 1rem;
-  color: black;
+  color: #490b3d;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   cursor: pointer;
+  width: 70%;
 }
 
 .navbar-realisation:hover {
-  background-color: green;
+  background-color: #490b3d;
   color: white;
+  text-decoration: underline;
 }
 .navbar-cvenligne:hover {
-  background-color: green;
+  background-color: #490b3d;
   color: white;
+  text-decoration: underline;
 }
 .navbar-contact:hover {
-  background-color: green;
+  background-color: #490b3d;
   color: white;
+  text-decoration: underline;
 }
 
 @media (max-width: 375px) {
