@@ -3,13 +3,8 @@
 }
 
 .container-background {
-  background-color: rgb(240, 240, 240);
+  background-color: #f7f7f7;
   overflow: auto;
-}
-
-.App {
-  width: 80%;
-  margin: 0 auto;
 }
 
 /* navbar  */
@@ -22,13 +17,13 @@
   grid-template-areas: "navbar-name navbar-realisation navbar-cvenligne navbar-contact";
   justify-content: center;
   align-items: center;
-  background-color: rgb(64, 130, 160);
+  background-color: #f7f7f7;
   box-sizing: border-box;
   align-content: center;
   padding: 1rem;
   overflow: hidden;
   top: 0;
-  width: 80%;
+  width: 100%;
   position: fixed;
   height: 10vh;
 }
@@ -45,7 +40,6 @@
 .navbar-contact {
   grid-area: navbar-realisation;
   border-radius: 10px;
-  background-color: white;
   width: 50%;
   text-align: center;
   padding: 1rem;
@@ -54,6 +48,7 @@
   font-size: 1.3rem;
   cursor: pointer;
   width: 70%;
+  transition: 0.3s;
 }
 
 .navbar-realisation:hover {
@@ -126,4 +121,9 @@
     width: 100%;
     margin: 0 auto;
   }
+}
+
+.greying-out {
+  background-color: rgb(230, 230, 230);
+  transition: 1s;
 }

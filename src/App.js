@@ -1,4 +1,5 @@
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useState, useEffect } from "react";
 
 import "./App.css";
 import JobTitle from "./Components/JobTitle/index";
@@ -8,11 +9,36 @@ import CvEnLigne from "./Components/CvEnLigne/index";
 import Footer from "./Components/Footer/index";
 
 function App() {
+  const [scrollY, setScrollY] = useState(0);
+
+  function logit() {
+    setScrollY(window.pageYOffset);
+  }
+
+  useEffect(() => {
+    function watchScroll() {
+      window.addEventListener("scroll", logit);
+    }
+    watchScroll();
+    return () => {
+      window.removeEventListener("scroll", logit);
+    };
+  });
+
+  console.log(scrollY);
+
+  let changeBg = "grid-container-navbar ";
+
+  if (scrollY >= 1) {
+    changeBg += "greying-out";
+  }
+  console.log(changeBg);
+
   return (
     <div className='container-background'>
       <div className='App'>
         <div className='container-grid-contain'>
-          <nav className='grid-container-navbar'>
+          <nav className={changeBg}>
             <div className='navbar-name'>Paul Barraud de Lagerie</div>
             <Link
               activeClass='active'
