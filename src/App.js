@@ -6,6 +6,7 @@ import JobTitle from "./Components/JobTitle/index";
 import Realisations from "./Components/Realisations/index";
 import Contact from "./Components/Contact/index";
 import CvEnLigne from "./Components/CvEnLigne/index";
+import Stack from "./Components/Stack/index";
 import Footer from "./Components/Footer/index";
 import UpArrow from "./Components/UpArrow/index";
 
@@ -49,6 +50,18 @@ function App() {
             </div>
             <Link
               activeClass='active'
+              to='stack'
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <div className={"navbar-realisation " + changeColorNav}>
+                Stack
+              </div>
+            </Link>
+            <Link
+              activeClass='active'
               to='realisations'
               spy={true}
               smooth={true}
@@ -85,6 +98,9 @@ function App() {
         </div>
         <div className='container-content'>
           <JobTitle />
+          <div id='stack'>
+            <Stack />
+          </div>
           <div id='realisations'>
             <Realisations />
           </div>

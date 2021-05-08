@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-stack {
+  height: 100vh;
+  border-top: 5px solid #bd1e51;
+}
+
+.positionning-div-stack {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #bd1e51;
+  color: white;
+  font-weight: 600;
+}
+
+/* layout stack */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 0px;
+  grid-template-areas:
+    "front-end back-end frameworks others"
+    "html Node-Js material-ui git"
+    "react express-js flat-ui npm"
+    "redux sequelize grid slack"
+    "scss postgresql . discord";
+  place-items: center center;
+  margin-top: 5rem;
+}
+
+.front-end {
+  grid-area: front-end;
+}
+
+.back-end {
+  grid-area: back-end;
+}
+
+.others {
+  grid-area: others;
+}
+
+.frameworks {
+  grid-area: frameworks;
+}
+
+.html {
+  grid-area: html;
+}
+
+.react {
+  grid-area: react;
+}
+
+.redux {
+  grid-area: redux;
+}
+
+.scss {
+  grid-area: scss;
+}
+
+.Node-Js {
+  grid-area: Node-Js;
+}
+
+.express-js {
+  grid-area: express-js;
+}
+
+.sequelize {
+  grid-area: sequelize;
+}
+
+.postgresql {
+  grid-area: postgresql;
+}
+
+.material-ui {
+  grid-area: material-ui;
+}
+
+.flat-ui {
+  grid-area: flat-ui;
+}
+
+.git {
+  grid-area: git;
+}
+
+.npm {
+  grid-area: npm;
+}
+
+.slack {
+  grid-area: slack;
+}
+
+.discord {
+  grid-area: discord;
+}
+
+.grid {
+  grid-area: grid;
+}
+
+/* images */
+
+.miniature {
+  min-height: 100%;
+  max-height: 100%;
+  width: 100px;
+  height: 100px;
+}

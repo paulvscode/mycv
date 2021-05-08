@@ -11,10 +11,10 @@
 
 .grid-container-navbar {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: "navbar-name navbar-realisation navbar-cvenligne navbar-contact";
+  grid-template-areas: "navbar-name navbar-stack navbar-realisation navbar-cvenligne navbar-contact";
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
@@ -35,10 +35,50 @@
   margin-left: 3rem;
 }
 
-.navbar-realisation,
-.navbar-cvenligne,
-.navbar-contact {
+.navbar-realisation {
   grid-area: navbar-realisation;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  color: #490b3d;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  cursor: pointer;
+  width: 70%;
+  transition: 0.3s;
+}
+
+.navbar-stack {
+  grid-area: navbar-stack;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  color: #490b3d;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  cursor: pointer;
+  width: 70%;
+  transition: 0.3s;
+}
+
+.navbar-cvenligne {
+  grid-area: navbar-cvenligne;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  color: #490b3d;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  cursor: pointer;
+  width: 70%;
+  transition: 0.3s;
+}
+
+.navbar-contact {
+  grid-area: navbar-contact;
   border-radius: 10px;
   width: 50%;
   text-align: center;
@@ -144,6 +184,5 @@
 }
 
 #navbar-fixed-div {
-  width: 90%;
-  margin: 0 10%;
+  width: 100%;
 }
