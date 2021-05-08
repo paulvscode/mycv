@@ -20,6 +20,11 @@
 
 /* layout stack */
 
+.stacks {
+  display: flex;
+  justify-content: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -33,6 +38,7 @@
     "scss postgresql . discord";
   place-items: center center;
   margin-top: 5rem;
+  width: 70%;
 }
 
 .front-end {

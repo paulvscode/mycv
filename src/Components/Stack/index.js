@@ -8,34 +8,10 @@ const Stack = () => {
       <div className='content-stack'></div>
       <div className='stacks'>
         <div className='grid-container'>
-          <div className='front-end'>
-            <img
-              className='miniature'
-              src='https://picsum.photos/200/300'
-              alt=''
-            />
-          </div>
-          <div className='back-end'>
-            <img
-              className='miniature'
-              src='https://picsum.photos/200/300'
-              alt=''
-            />
-          </div>
-          <div className='others'>
-            <img
-              className='miniature'
-              src='https://picsum.photos/200/300'
-              alt=''
-            />
-          </div>
-          <div className='frameworks'>
-            <img
-              className='miniature'
-              src='https://picsum.photos/200/300'
-              alt=''
-            />
-          </div>
+          <div className='front-end'>Front-end</div>
+          <div className='back-end'>Back-end</div>
+          <div className='others'>Others</div>
+          <div className='frameworks'>Frameworks</div>
           <div className='html'>
             <img
               className='miniature'
