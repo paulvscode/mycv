@@ -33,11 +33,14 @@
 }
 
 .realisation-box {
-  width: 300px;
+  width: 500px;
   height: 300px;
-
-  padding: 1rem;
+  padding: 0.3rem;
   margin: 1rem;
+}
+
+.dn-image {
   border-radius: 10px;
-  border: 2px solid #f1b814;
+  max-width: 100%;
+  max-height: 100%;
 }
