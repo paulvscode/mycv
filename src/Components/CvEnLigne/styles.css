@@ -1,8 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 .container-cv {
   height: 100vh;
-  border-top: 5px solid #f1b814;
+  border-top: 5px solid #bd1e51;
 }
 
 .positionning-div-cv {
   height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #bd1e51;
+  color: white;
+  font-weight: 600;
 }

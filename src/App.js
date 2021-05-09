@@ -45,7 +45,12 @@ function App() {
         {scrollY >= 1 && <UpArrow />}
         <div className='container-grid-contain'>
           <nav id='navbar-fixed-div' className={changeBg}>
-            <div className={"navbar-name " + changeColorNavName}>
+            <div
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className={"navbar-name " + changeColorNavName}
+            >
               Paul Barraud de Lagerie
             </div>
             <Link
@@ -65,7 +70,7 @@ function App() {
               to='realisations'
               spy={true}
               smooth={true}
-              offset={-98}
+              offset={-94}
               duration={500}
             >
               <div className={"navbar-realisation " + changeColorNav}>
@@ -77,7 +82,7 @@ function App() {
               to='cv'
               spy={true}
               smooth={true}
-              offset={-98}
+              offset={-94}
               duration={500}
             >
               <div className={"navbar-cvenligne " + changeColorNav}>
@@ -89,7 +94,7 @@ function App() {
               to='contact'
               spy={true}
               smooth={true}
-              offset={-98}
+              offset={-94}
               duration={500}
             >
               <div className={"navbar-contact " + changeColorNav}>Contact</div>

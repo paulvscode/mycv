@@ -1,8 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
 .container-realisations {
   height: 100vh;
-  border-top: 5px solid #bd1e51;
+  border-top: 5px solid #f1b814;
 }
 
 .positionning-div-realisations {
   height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #f1b814;
+  color: white;
+  font-weight: 600;
+}
+
+/* box realisation */
+
+.content-realisations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  overflow-y: scroll;
+  height: 70%;
+}
+
+.realisation-box {
+  width: 300px;
+  height: 300px;
+
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  border: 2px solid #f1b814;
 }

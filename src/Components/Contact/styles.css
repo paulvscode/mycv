@@ -1,8 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 .container-contact {
   height: 100vh;
-  border-top: 5px solid #490b3d;
+  border-top: 5px solid #f1b814;
 }
 
 .positionning-div-contact {
   height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #f1b814;
+  color: white;
+  font-weight: 600;
 }
