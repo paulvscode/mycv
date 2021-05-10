@@ -45,7 +45,7 @@
   grid-area: front-end;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #bd1e51;
+  color: black;
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -55,7 +55,7 @@
   grid-area: back-end;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #bd1e51;
+  color: black;
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -65,7 +65,7 @@
   grid-area: others;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #bd1e51;
+  color: black;
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -75,7 +75,7 @@
   grid-area: frameworks;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #bd1e51;
+  color: black;
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
