@@ -1,16 +1,28 @@
 import React, { useState } from "react";
+import { useInput } from "../../hook/input-hook/index";
 import "./styles.css";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const {
+    value: firstName,
+    bind: bindFirstName,
+    reset: resetFirstName,
+  } = useInput("");
+
+  const { value: email, bind: bindEmail, reset: resetEmail } = useInput("");
+
+  const { value: message, bind: bindMessage, reset: resetMessage } = useInput(
+    ""
+  );
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log(
-      `Submitting Name ${name}, email ${email} and message ${message}`
-    );
+    console.log(`Submitting Name ${firstName}`);
+    console.log(`Submitting Email ${email}`);
+    console.log(`Submitting Message ${message}`);
+    resetFirstName();
+    resetEmail();
+    resetMessage();
   };
 
   return (
@@ -20,16 +32,12 @@ const Contact = () => {
         <form id='contact-form' onSubmit={handleSubmit} method='POST'>
           <div className='form-group'>
             <label htmlFor='name'>Name</label>
-            <input
-              onChange={(e) => setName(e.target.value)}
-              type='text'
-              className='form-control'
-            />
+            <input type='text' {...bindFirstName} className='form-control' />
           </div>
           <div className='form-group'>
             <label htmlFor='exampleInputEmail1'>Email address</label>
             <input
-              onChange={(e) => setEmail(e.target.value)}
+              {...bindEmail}
               type='email'
               className='form-control'
               aria-describedby='emailHelp'
@@ -38,7 +46,7 @@ const Contact = () => {
           <div className='form-group'>
             <label htmlFor='message'>Message</label>
             <textarea
-              onChange={(e) => setMessage(e.target.value)}
+              {...bindMessage}
               className='form-control'
               rows='5'
             ></textarea>
