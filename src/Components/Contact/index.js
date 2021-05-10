@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 // import { useInput } from "../../hook/input-hook/index";
 import "./styles.css";
 import { init, sendForm } from "emailjs-com";
 import { useForm } from "react-hook-form";
-const onSubmit = (data) => console.log(data);
 
 init("user_0CrOptuBnm7Nb076RUCzg");
 
 const Contact = () => {
+  const ref = React.useRef();
+
   const { register, handleSubmit, watch, errors } = useForm();
 
   const onSubmit = (data) => {
@@ -29,20 +30,25 @@ const Contact = () => {
           <input
             type='text'
             name='user_name'
-            ref={register}
+            ref={{ ...register("user_name") }}
             placeholder='Name'
           />
           <br />
           <input
             type='email'
             name='user_email'
-            ref={register}
+            ref={{ ...register("user_email") }}
             placeholder='Email'
           />
           <br />
-          <textarea name='message' ref={register} placeholder='Message' />
+          <textarea
+            className='text-area-form'
+            name='message'
+            ref={{ ...register("Message") }}
+            placeholder='Message'
+          />
           <br />
-          <input type='submit' value='Send' />
+          <input className='button-submit' type='submit' value='Send' />
         </form>
       </div>
     </div>

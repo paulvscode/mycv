@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "quicksand", sans-serif;
 }
 
 .container-contact {
@@ -39,9 +40,6 @@
   line-height: 2;
 }
 
-.form-control {
-}
-
 .button-submit {
   margin: 1rem;
   background: transparent;
@@ -60,4 +58,18 @@
 .button-submit:hover {
   background-color: white;
   color: #f1b814;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+input[type="email"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.text-area-form {
+  padding: 10px;
+  margin: 10px 0;
 }
