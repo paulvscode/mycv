@@ -14,6 +14,8 @@ const Footer = () => {
         <img className='linkedin-logo' src={LinkedIn} alt='Linked in' />
       </a>
       <a
+        rel='noreferrer'
+        target='_blank'
         className='cv-link'
         href='https://drive.google.com/file/d/1bRI2jUK2v57QQ85BZe5JL-kynZkcLxyr/view?usp=sharing'
       >
