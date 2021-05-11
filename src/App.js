@@ -5,7 +5,7 @@ import "./App.css";
 import JobTitle from "./Components/JobTitle/index";
 import Realisations from "./Components/Realisations/index";
 import Contact from "./Components/Contact/index";
-import CvEnLigne from "./Components/CvEnLigne/index";
+// import CvEnLigne from "./Components/CvEnLigne/index";
 import Stack from "./Components/Stack/index";
 import Footer from "./Components/Footer/index";
 import UpArrow from "./Components/UpArrow/index";
@@ -26,8 +26,6 @@ function App() {
       window.removeEventListener("scroll", logit);
     };
   });
-
-  console.log(scrollY);
 
   let changeBg = "grid-container-navbar ";
   let changeColorNav = "";
@@ -77,7 +75,7 @@ function App() {
                 Réalisations
               </div>
             </Link>
-            <Link
+            {/* <Link
               activeClass='active'
               to='cv'
               spy={true}
@@ -88,7 +86,7 @@ function App() {
               <div className={"navbar-cvenligne " + changeColorNav}>
                 Cv en ligne
               </div>
-            </Link>
+            </Link> */}
             <Link
               activeClass='active'
               to='contact'
@@ -109,9 +107,9 @@ function App() {
           <div id='realisations'>
             <Realisations />
           </div>
-          <div id='cv'>
+          {/* <div id='cv'>
             <CvEnLigne />
-          </div>
+          </div> */}
           <div id='contact'>
             <Contact />
           </div>

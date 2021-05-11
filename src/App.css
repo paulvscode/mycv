@@ -14,7 +14,7 @@
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas: "navbar-name navbar-stack navbar-realisation navbar-cvenligne navbar-contact";
+  grid-template-areas: "navbar-name navbar-stack navbar-realisation navbar-contact";
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
@@ -26,6 +26,7 @@
   width: 100%;
   position: fixed;
   height: 10vh;
+  z-index: 1;
 }
 
 .navbar-name {

@@ -7,9 +7,7 @@ import { useForm } from "react-hook-form";
 init("user_0CrOptuBnm7Nb076RUCzg");
 
 const Contact = () => {
-  const ref = React.useRef();
-
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
     sendForm("default_service", "template_rwzn49c", "#contact-form").then(
@@ -30,21 +28,21 @@ const Contact = () => {
           <input
             type='text'
             name='user_name'
-            ref={{ ...register("user_name") }}
+            register={register}
             placeholder='Name'
           />
           <br />
           <input
             type='email'
             name='user_email'
-            ref={{ ...register("user_email") }}
+            register={register}
             placeholder='Email'
           />
           <br />
           <textarea
             className='text-area-form'
             name='message'
-            ref={{ ...register("Message") }}
+            register={register}
             placeholder='Message'
           />
           <br />
