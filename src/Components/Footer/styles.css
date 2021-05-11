@@ -21,3 +21,19 @@
   padding: 3px;
   transition: 0.1s;
 }
+
+.cv-link {
+  margin-left: 3rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cv-link:hover {
+  text-decoration: underline;
+  background-color: #bd1e51;
+  color: white;
+}
