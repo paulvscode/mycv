@@ -38,7 +38,6 @@
     "scss postgresql . github";
   place-items: center center;
   width: 70%;
-  margin-top: 3rem;
 }
 
 .front-end {
@@ -157,4 +156,8 @@
   min-width: 100%;
   max-width: 100%;
   width: 100px;
+}
+
+.height-icon {
+  height: 100px;
 }

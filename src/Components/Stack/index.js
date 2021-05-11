@@ -48,14 +48,14 @@ const Stack = () => {
           </div>
           <div className='sequelize'>
             <img
-              className='miniature added-styling'
+              className='miniature added-styling height-icon'
               src={SequelizeIcon}
               alt=''
             />
           </div>
           <div className='postgresql'>
             <img
-              className='miniature added-styling'
+              className='miniature added-styling height-icon'
               src={PostgresqlIcon}
               alt=''
             />
@@ -80,7 +80,11 @@ const Stack = () => {
             <img className='miniature added-styling' src={NpmIcon} alt='' />
           </div>
           <div className='slack'>
-            <img className='miniature added-styling' src={SlackIcon} alt='' />
+            <img
+              className='miniature added-styling height-icon'
+              src={SlackIcon}
+              alt=''
+            />
           </div>
           <div className='github'>
             <img className='miniature added-styling' src={GithubIcon} alt='' />
