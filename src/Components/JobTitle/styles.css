@@ -18,14 +18,22 @@
 
 @media (max-width: 375px) {
   .container-jobtitle {
-    height: 100vh;
+    height: auto;
     background-color: #490b3d;
+    margin-top: 0;
   }
   .content-jobtitle {
     width: 100%;
     background-color: white;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 0px;
+  }
+  .introduction-jobtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+  }
+  .paragraphe-jobtitle {
   }
 }
 

@@ -5,12 +5,15 @@ const JobTitle = () => {
   return (
     <div className='container-jobtitle'>
       <div className='content-jobtitle'>
-        <h1> Je suis un développeur Javascript fullstack.</h1>
-        <p>
+        <h1 className='introduction-jobtitle'>
+          {" "}
+          Je suis un développeur Javascript fullstack.
+        </h1>
+        <p className='paragraphe-jobtitle'>
           Je suis spécialisé en React pour le front-end et en Node Js pour le
           back-end.
         </p>
-        <p>
+        <p className='paragraphe-jobtitle'>
           Suite à ma formation chez{" "}
           <a
             target='_blank'
