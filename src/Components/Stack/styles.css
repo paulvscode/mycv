@@ -37,7 +37,7 @@
     "redux sequelize grid slack"
     "scss postgresql . github";
   place-items: center center;
-  width: 70%;
+  width: 60%;
 }
 
 .front-end {
@@ -45,9 +45,9 @@
   font-size: 1.3rem;
   font-weight: 600;
   color: black;
-  background-color: white;
   border-radius: 10px;
   padding: 1rem;
+  background-color: rgb(238, 238, 238);
 }
 
 .back-end {
@@ -55,9 +55,9 @@
   font-size: 1.3rem;
   font-weight: 600;
   color: black;
-  background-color: white;
   border-radius: 10px;
   padding: 1rem;
+  background-color: rgb(238, 238, 238);
 }
 
 .others {
@@ -65,9 +65,9 @@
   font-size: 1.3rem;
   font-weight: 600;
   color: black;
-  background-color: white;
   border-radius: 10px;
   padding: 1rem;
+  background-color: rgb(238, 238, 238);
 }
 
 .frameworks {
@@ -75,9 +75,32 @@
   font-size: 1.3rem;
   font-weight: 600;
   color: black;
-  background-color: white;
   border-radius: 10px;
   padding: 1rem;
+  background-color: rgb(238, 238, 238);
+}
+
+.logo-box {
+  background-color: rgb(238, 238, 238);
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+}
+
+.front-end:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+.back-end:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+.others:hover {
+  background-color: white;
+  transition: 0.3s;
+}
+.frameworks:hover {
+  background-color: white;
+  transition: 0.3s;
 }
 
 .html {
@@ -155,9 +178,17 @@
 .miniature {
   min-width: 100%;
   max-width: 100%;
-  width: 100px;
+  width: 90px;
 }
 
 .height-icon {
-  height: 100px;
+  height: 80px;
+}
+
+.logo-caption {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
 }

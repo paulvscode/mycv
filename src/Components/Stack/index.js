@@ -1,6 +1,6 @@
 import React from "react";
 import ReactIcon from "../../assets/images/react.svg";
-import HtmlIcon from "../../assets/images/html.svg";
+import HtmlIcon from "../../assets/images/htmllogo.svg";
 import ReduxIcon from "../../assets/images/redux.png";
 import ScssIcon from "../../assets/images/scss.svg";
 import NodeJsIcon from "../../assets/images/nodejs.png";
@@ -29,65 +29,154 @@ const Stack = () => {
           <div className='others'>Others</div>
           <div className='frameworks'>Frameworks</div>
           <div className='html'>
-            <img className='miniature added-styling' src={HtmlIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={HtmlIcon}
+                alt=''
+              />
+              <div className='logo-caption'>Html</div>
+            </div>
           </div>
           <div className='react'>
-            <img className='miniature added-styling' src={ReactIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={ReactIcon}
+                alt=''
+              />
+              <div className='logo-caption'>React</div>
+            </div>
           </div>
           <div className='redux'>
-            <img className='miniature added-styling' src={ReduxIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={ReduxIcon}
+                alt=''
+              />
+              <div className='logo-caption'>Redux</div>
+            </div>
           </div>
           <div className='scss'>
-            <img className='miniature added-styling' src={ScssIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={ScssIcon}
+                alt=''
+              />
+              <div className='logo-caption'>Sass</div>
+            </div>
           </div>
-          <div className='Node-Js'>
-            <img className='miniature added-styling' src={NodeJsIcon} alt='' />
+          <div className='logo-box'>
+            <div className='Node-Js'>
+              <img
+                className='miniature added-styling height-icon'
+                src={NodeJsIcon}
+                alt=''
+              />
+              <div className='logo-caption'>Node Js</div>
+            </div>
           </div>
           <div className='express-js'>
-            <img className='miniature added-styling' src={ExpressIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={ExpressIcon}
+                alt=''
+              />
+              <div className='logo-caption'>Express Js</div>
+            </div>
           </div>
           <div className='sequelize'>
-            <img
-              className='miniature added-styling height-icon'
-              src={SequelizeIcon}
-              alt=''
-            />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={SequelizeIcon}
+                alt=''
+              />
+              <div className='logo-caption'>sequelize</div>
+            </div>
           </div>
           <div className='postgresql'>
-            <img
-              className='miniature added-styling height-icon'
-              src={PostgresqlIcon}
-              alt=''
-            />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={PostgresqlIcon}
+                alt=''
+              />
+              <div className='logo-caption'>postgresql</div>
+            </div>
           </div>
           <div className='material-ui'>
-            <img
-              className='miniature added-styling'
-              src={MaterialuiIcon}
-              alt=''
-            />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={MaterialuiIcon}
+                alt=''
+              />
+              <div className='logo-caption'>material ui</div>
+            </div>
           </div>
           <div className='flat-ui'>
-            <img className='miniature added-styling' src={FlatuiIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={FlatuiIcon}
+                alt=''
+              />
+              <div className='logo-caption'>flat ui</div>
+            </div>
           </div>
           <div className='grid'>
-            <img className='miniature added-styling' src={GridIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={GridIcon}
+                alt=''
+              />
+              <div className='logo-caption'>grid</div>
+            </div>
           </div>
           <div className='git'>
-            <img className='miniature added-styling' src={GitIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={GitIcon}
+                alt=''
+              />
+              <div className='logo-caption'>git</div>
+            </div>
           </div>
           <div className='npm'>
-            <img className='miniature added-styling' src={NpmIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={NpmIcon}
+                alt=''
+              />
+              <div className='logo-caption'>npm</div>
+            </div>
           </div>
           <div className='slack'>
-            <img
-              className='miniature added-styling height-icon'
-              src={SlackIcon}
-              alt=''
-            />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={SlackIcon}
+                alt=''
+              />
+              <div className='logo-caption'>slack</div>
+            </div>
           </div>
           <div className='github'>
-            <img className='miniature added-styling' src={GithubIcon} alt='' />
+            <div className='logo-box'>
+              <img
+                className='miniature added-styling height-icon'
+                src={GithubIcon}
+                alt=''
+              />
+              <div className='logo-caption'>github</div>
+            </div>
           </div>
         </div>
       </div>
