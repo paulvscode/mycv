@@ -1,200 +1,4 @@
-/* * {
-  box-sizing: border-box;
-}
-
-.container-background {
-  background-color: #f7f7f7;
-  overflow: auto;
-}
-
-/* navbar  */
-
-/* .grid-container-navbar {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "navbar-name navbar-stack navbar-realisation navbar-contact";
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f7f7;
-  box-sizing: border-box;
-  align-content: center;
-  padding: 1rem;
-  overflow: hidden;
-  top: 0;
-  width: 100%;
-  position: fixed;
-  height: 10vh;
-  z-index: 1;
-}
-
-.navbar-name {
-  grid-area: navbar-name;
-  color: #490b3d;
-  font-size: 1.3rem;
-  margin-left: 3rem;
-}
-
-.navbar-realisation {
-  grid-area: navbar-realisation;
-  border-radius: 10px;
-  width: 50%;
-  text-align: center;
-  padding: 1rem;
-  color: #490b3d;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  cursor: pointer;
-  width: 70%;
-  transition: 0.3s;
-}
-
-.navbar-stack {
-  grid-area: navbar-stack;
-  border-radius: 10px;
-  width: 50%;
-  text-align: center;
-  padding: 1rem;
-  color: #490b3d;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  cursor: pointer;
-  width: 70%;
-  transition: 0.3s;
-}
-
-.navbar-cvenligne {
-  grid-area: navbar-cvenligne;
-  border-radius: 10px;
-  width: 50%;
-  text-align: center;
-  padding: 1rem;
-  color: #490b3d;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  cursor: pointer;
-  width: 70%;
-  transition: 0.3s;
-}
-
-.navbar-contact {
-  grid-area: navbar-contact;
-  border-radius: 10px;
-  width: 50%;
-  text-align: center;
-  padding: 1rem;
-  color: #490b3d;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  cursor: pointer;
-  width: 70%;
-  transition: 0.3s;
-}
-
-.navbar-realisation:hover {
-  background-color: #490b3d;
-  color: white;
-  text-decoration: underline;
-}
-.navbar-cvenligne:hover {
-  background-color: #490b3d;
-  color: white;
-  text-decoration: underline;
-}
-.navbar-contact:hover {
-  background-color: #490b3d;
-  color: white;
-  text-decoration: underline;
-}
-
-@media (max-width: 375px) {
-  .grid-container-navbar {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 5px 0px;
-    grid-template-areas:
-      "navbar-name"
-      "navbar-realisation"
-      "navbar-cvenligne"
-      "navbar-contact";
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    box-sizing: border-box;
-    width: 100vw;
-    max-width: 100vw;
-    position: static;
-  }
-
-  .navbar-name {
-    grid-area: navbar-name;
-    width: 100%;
-    text-align: center;
-    color: green;
-    font-size: 1.4rem;
-  }
-  .navbar-realisation {
-    grid-area: navbar-realisation;
-    width: 100%;
-    background-color: white;
-    color: green;
-    border-radius: 5px;
-    border: 1px solid black;
-  }
-  .navbar-cvenligne {
-    grid-area: navbar-cvenligne;
-    width: 100%;
-    background-color: white;
-    color: green;
-    border-radius: 5px;
-    border: 1px solid black;
-  }
-  .navbar-contact {
-    grid-area: navbar-contact;
-    width: 100%;
-    background-color: white;
-    color: green;
-    border-radius: 5px;
-    border: 1px solid black;
-  }
-  #navbar-fixed-div {
-    max-width: 100vw;
-    overflow: hidden;
-  }
-}
-
-.greying-out {
-  background-color: #490b3d;
-  transition: 1s;
-  border-bottom: 5px solid #490b3d;
-}
-
-.color-navbar-on-scroll {
-  color: white;
-}
-
-.color-navbar-on-scroll:hover {
-  color: #490b3d;
-  text-decoration: underline;
-  background-color: white;
-}
-
-.color-navbar-name-on-scroll {
-  color: white;
-}
-
-#navbar-fixed-div {
-  width: 100%;
-} */
-*/
-
-
- /* switching to flexbox */
-
- * {
+* {
   box-sizing: border-box;
 }
 
@@ -219,58 +23,49 @@
 .navbar-name {
   color: #490b3d;
   font-size: 1.3rem;
-  margin-left: 3rem;
 }
 
 .navbar-realisation {
   border-radius: 10px;
-  width: 50%;
   text-align: center;
   padding: 1rem;
   color: #490b3d;
   text-transform: uppercase;
   font-size: 1.3rem;
   cursor: pointer;
-  width: 70%;
   transition: 0.3s;
 }
 
 .navbar-stack {
   border-radius: 10px;
-  width: 50%;
   text-align: center;
   padding: 1rem;
   color: #490b3d;
   text-transform: uppercase;
   font-size: 1.3rem;
   cursor: pointer;
-  width: 70%;
   transition: 0.3s;
 }
 
 .navbar-cvenligne {
   border-radius: 10px;
-  width: 50%;
   text-align: center;
   padding: 1rem;
   color: #490b3d;
   text-transform: uppercase;
   font-size: 1.3rem;
   cursor: pointer;
-  width: 70%;
   transition: 0.3s;
 }
 
 .navbar-contact {
   border-radius: 10px;
-  width: 50%;
   text-align: center;
   padding: 1rem;
   color: #490b3d;
   text-transform: uppercase;
   font-size: 1.3rem;
   cursor: pointer;
-  width: 70%;
   transition: 0.3s;
 }
 
@@ -358,4 +153,5 @@
 
 #navbar-fixed-div {
   width: 100%;
+  z-index: 9999;
 }

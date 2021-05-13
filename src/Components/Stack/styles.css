@@ -22,22 +22,13 @@
 
 .stacks {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px 0px;
-  grid-template-areas:
-    "front-end back-end frameworks others"
-    "html Node-Js material-ui git"
-    "react express-js flat-ui npm"
-    "redux sequelize grid slack"
-    "scss postgresql . github";
-  place-items: center center;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .front-end {
@@ -84,66 +75,8 @@
   background-color: rgb(238, 238, 238);
   padding: 0.2rem 1rem;
   border-radius: 10px;
-}
-
-.html {
-  grid-area: html;
-}
-
-.react {
-  grid-area: react;
-}
-
-.redux {
-  grid-area: redux;
-}
-
-.scss {
-  grid-area: scss;
-}
-
-.node-js {
-  grid-area: Node-Js;
-}
-
-.express-js {
-  grid-area: express-js;
-}
-
-.sequelize {
-  grid-area: sequelize;
-}
-
-.postgresql {
-  grid-area: postgresql;
-}
-
-.material-ui {
-  grid-area: material-ui;
-}
-
-.flat-ui {
-  grid-area: flat-ui;
-}
-
-.git {
-  grid-area: git;
-}
-
-.npm {
-  grid-area: npm;
-}
-
-.slack {
-  grid-area: slack;
-}
-
-.github {
-  grid-area: github;
-}
-
-.grid {
-  grid-area: grid;
+  border-radius: 10px;
+  margin: 2rem;
 }
 
 .added-styling {
@@ -174,6 +107,35 @@
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   font-weight: 600;
+}
+
+.container-front-end-base {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container-back-end-base {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container-others-base {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container-frameworks-base {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 @media (max-width: 375px) {
