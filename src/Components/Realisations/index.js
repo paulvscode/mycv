@@ -59,10 +59,6 @@ const Realisations = () => {
             </div>
           </div>
         </div>
-        <div className='realisation-box'></div>
-        <div className='realisation-box'></div>
-        <div className='realisation-box'></div>
-        <div className='realisation-box'></div>
       </div>
     </div>
   );
