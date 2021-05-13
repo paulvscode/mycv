@@ -4,7 +4,6 @@
 
 .container-realisations {
   height: 100vh;
-  border-top: 5px solid #f1b814;
 }
 
 .positionning-div-realisations {
@@ -72,6 +71,17 @@
 }
 
 @media (max-width: 375px) {
+  .content-realisations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+    height: auto;
+  }
+
   .resize-image {
     border-radius: 10px;
     width: 100%;
@@ -89,5 +99,34 @@
     position: relative;
     width: 300px;
     height: 200px;
+  }
+
+  .positionning-div-realisations {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #f1b814;
+    color: white;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  .container-realisations {
+    height: auto;
+  }
+
+  .color-me {
+    display: none;
+    position: static;
+    left: 0;
+    bottom: 0;
+    color: #490b3d;
+    font-size: 1.3rem;
+    width: 500px;
+    height: 200px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    text-align: center;
   }
 }
